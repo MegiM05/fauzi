@@ -9,7 +9,7 @@ const kelompokColors = [
 
 async function loadData() {
     try {
-        const response = await fetch('../database/nama.json');
+        const response = await fetch('database/nama.json');
         if (!response.ok) throw new Error('Failed to load data');
         return await response.json();
     } catch (error) {
